@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710620080875",
+    "project_id": "seestyledb",
+    "storage_bucket": "seestyledb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710620080875:android:1860ba1721bed6b84a6cae",
+        "android_client_info": {
+          "package_name": "com.example.seestyle_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-JTJcUx5gtiaei2lYJHSkTMFP2JPE84I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
