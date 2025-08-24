@@ -1,1 +1,24 @@
-flutter/ephemeral
+# Flutter & Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+
+# Android
+**/android/.gradle/
+**/android/local.properties
+**/android/app/*.keystore
+
+# iOS
+**/ios/Pods/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+
+# VSCode / IntelliJ
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
