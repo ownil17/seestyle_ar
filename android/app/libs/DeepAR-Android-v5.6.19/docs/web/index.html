@@ -1,0 +1,239 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>DeepAR Web API - v5.6.19</title><meta name="description" content="Documentation for DeepAR Web API"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"><a href="https://www.deepar.ai/">DeepAR.ai</a><a href="https://developer.deepar.ai/">Developer portal</a><a href="https://docs.deepar.ai/">Docs</a></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">DeepAR Web API - v5.6.19</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<h2>DeepAR Web API - v5.6.19</h2></div>
+<div class="tsd-panel tsd-typography"><p>DeepAR Web is an augmented reality SDK 
+that allows users to integrate advanced, Snapchat-like 
+face lenses in the browser environment. </p>
+<p>DeepAR Web supports:</p>
+<ul>
+<li>Glasses try-on.</li>
+<li>Face filters and masks.</li>
+<li>Background replacement.</li>
+<li>Background blur.</li>
+<li>AR mini-games.</li>
+</ul>
+<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><ul>
+<li>Visit official DeepAR docs for Web SDK here <a href="https://docs.deepar.ai/deepar-sdk/platforms/web/overview">https://docs.deepar.ai/deepar-sdk/platforms/web/overview</a>.</li>
+<li>See the official example here: <a href="https://github.com/DeepARSDK/quickstart-web-js-npm">https://github.com/DeepARSDK/quickstart-web-js-npm</a></li>
+<li>Set up and web ad with DeepAR: <a href="https://github.com/DeepARSDK/quickstart-web-ad">https://github.com/DeepARSDK/quickstart-web-ad</a></li>
+</ul>
+<a id="md:license-key" class="tsd-anchor"></a><h2><a href="#md:license-key">License key</a></h2><p>In order to use the DeepAR Web SDK you need to set up a license key for your web app on <a href="https://developer.deepar.ai">developer.deepar.ai</a>.</p>
+<ol>
+<li>Create an account: <a href="https://developer.deepar.ai/signup">https://developer.deepar.ai/signup</a>.</li>
+<li>Create a project: <a href="https://developer.deepar.ai/projects">https://developer.deepar.ai/projects</a>.</li>
+<li>Add a web app to the project. Note that you need to specify the domain name which you plan to use for hosting the app.</li>
+</ol>
+<blockquote>
+<p>⚠️ The license key property is required both in a production and development (localhost) environment. Development sessions will not count towards your monthly active usage.</p>
+</blockquote>
+<a id="md:getting-started" class="tsd-anchor"></a><h2><a href="#md:getting-started">Getting started</a></h2><p>There are two main ways to get deepar.js in your JavaScript project: 
+via <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_JavaScript_within_a_webpage">script tags</a> 
+or by installing it from <a href="https://www.npmjs.com/package/deepar">NPM</a> 
+and using a build tool like 
+<a href="https://parceljs.org/">Parcel</a>, 
+<a href="https://webpack.js.org/">WebPack</a>, 
+or <a href="https://rollupjs.org/guide/en">Rollup</a>.</p>
+<a id="md:via-script-tag" class="tsd-anchor"></a><h3><a href="#md:via-script-tag">via Script tag</a></h3><p>Add the following code to an HTML file:</p>
+<pre><code class="language-html"><span class="hl-0">&lt;</span><span class="hl-1">html</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;</span><span class="hl-1">head</span><span class="hl-0">&gt;</span><br/><span class="hl-2">  </span><span class="hl-3">&lt;!-- Ensure compatibility and performance on mobile --&gt;</span><br/><span class="hl-2">  </span><span class="hl-0">&lt;</span><span class="hl-1">meta</span><span class="hl-2"> </span><span class="hl-4">name</span><span class="hl-2">=</span><span class="hl-5">&quot;viewport&quot;</span><span class="hl-2"> </span><span class="hl-4">content</span><span class="hl-2">=</span><span class="hl-5">&quot;width=device-width, initial-scale=1 &quot;</span><span class="hl-0">/&gt;</span><br/><span class="hl-2">  </span><span class="hl-3">&lt;!-- Load deepar.js --&gt;</span><br/><span class="hl-2">  </span><span class="hl-0">&lt;</span><span class="hl-1">script</span><span class="hl-6"> </span><span class="hl-4">src</span><span class="hl-6">=</span><span class="hl-5">&#39;https://cdn.jsdelivr.net/npm/deepar/js/deepar.js&#39;</span><span class="hl-0">&gt;</span><span class="hl-6"> </span><span class="hl-0">&lt;/</span><span class="hl-1">script</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;/</span><span class="hl-1">head</span><span class="hl-0">&gt;</span><br/><br/><span class="hl-0">&lt;</span><span class="hl-1">body</span><span class="hl-0">&gt;</span><br/><span class="hl-2">  </span><span class="hl-3">&lt;!-- Div element where AR preview will be inserted --&gt;</span><br/><span class="hl-2">  </span><span class="hl-0">&lt;</span><span class="hl-1">div</span><span class="hl-2"> </span><span class="hl-4">style</span><span class="hl-2">=</span><span class="hl-5">&#39;width: 640px; height: 360px&#39;</span><span class="hl-2"> </span><span class="hl-4">id</span><span class="hl-2">=</span><span class="hl-5">&#39;deepar-div&#39;</span><span class="hl-0">&gt;&lt;/</span><span class="hl-1">div</span><span class="hl-0">&gt;</span><br/><span class="hl-2">  </span><span class="hl-3">&lt;!-- Initialize DeepAR and load AR effect/filter --&gt;</span><br/><span class="hl-2">  </span><span class="hl-0">&lt;</span><span class="hl-1">script</span><span class="hl-0">&gt;</span><br/><span class="hl-6">    (</span><span class="hl-7">async</span><span class="hl-6"> </span><span class="hl-7">function</span><span class="hl-6">() {</span><br/><span class="hl-6">      </span><span class="hl-7">const</span><span class="hl-6"> </span><span class="hl-8">deepAR</span><span class="hl-6"> </span><span class="hl-2">=</span><span class="hl-6"> </span><span class="hl-9">await</span><span class="hl-6"> </span><span class="hl-10">deepar</span><span class="hl-6">.</span><span class="hl-11">initialize</span><span class="hl-6">({</span><br/><span class="hl-6">        </span><span class="hl-10">licenseKey:</span><span class="hl-6"> </span><span class="hl-12">&#39;your_license_key_here&#39;</span><span class="hl-6">,</span><br/><span class="hl-6">        </span><span class="hl-10">previewElement:</span><span class="hl-6"> </span><span class="hl-10">document</span><span class="hl-6">.</span><span class="hl-11">querySelector</span><span class="hl-6">(</span><span class="hl-12">&#39;#deepar-div&#39;</span><span class="hl-6">),</span><br/><span class="hl-6">        </span><span class="hl-10">effect:</span><span class="hl-6"> </span><span class="hl-12">&#39;https://cdn.jsdelivr.net/npm/deepar/effects/aviators&#39;</span><br/><span class="hl-6">      });</span><br/><span class="hl-6">    })();</span><br/><span class="hl-6">  </span><span class="hl-0">&lt;/</span><span class="hl-1">script</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;/</span><span class="hl-1">body</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;/</span><span class="hl-1">html</span><span class="hl-0">&gt;</span>
+</code><button>Copy</button></pre>
+<p>Alternatively, you can import DeepAR as an ES6 module.</p>
+<p>Via <code>&lt;script type=&#39;module&#39;&gt;</code>.</p>
+<pre><code class="language-html"><span class="hl-0">&lt;</span><span class="hl-1">script</span><span class="hl-6"> </span><span class="hl-4">type</span><span class="hl-6">=</span><span class="hl-5">&#39;module&#39;</span><span class="hl-0">&gt;</span><br/><span class="hl-6">  </span><span class="hl-9">import</span><span class="hl-6"> </span><span class="hl-7">*</span><span class="hl-6"> </span><span class="hl-9">as</span><span class="hl-6"> </span><span class="hl-10">deepar</span><span class="hl-6"> </span><span class="hl-9">from</span><span class="hl-6"> </span><span class="hl-12">&#39;https://cdn.jsdelivr.net/npm/deepar/js/deepar.esm.js&#39;</span><span class="hl-6">;</span><br/><span class="hl-0">&lt;/</span><span class="hl-1">script</span><span class="hl-0">&gt;</span>
+</code><button>Copy</button></pre>
+<p>Or via dynamic <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import">import</a>.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepar</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-7">import</span><span class="hl-2">(</span><span class="hl-12">&#39;https://cdn.jsdelivr.net/npm/deepar/js/deepar.esm.js&#39;</span><span class="hl-2">);</span>
+</code><button>Copy</button></pre>
+<a id="md:via-npm" class="tsd-anchor"></a><h3><a href="#md:via-npm">via NPM</a></h3><p>Add deepar.js to your project using <a href="https://yarnpkg.com/en/">yarn</a> or 
+<a href="https://docs.npmjs.com/cli/npm">npm</a>.</p>
+<p><strong>Note</strong>: Because we use ES2017 syntax (such as import), 
+this workflow assumes you are using a modern browser or a 
+bundler/transpiler to convert your code to something older browsers 
+understand. However, you are free to use any build tool that you prefer.</p>
+<pre><code class="language-javascript"><span class="hl-9">import</span><span class="hl-2"> </span><span class="hl-7">*</span><span class="hl-2"> </span><span class="hl-9">as</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2"> </span><span class="hl-9">from</span><span class="hl-2"> </span><span class="hl-12">&#39;deepar&#39;</span><span class="hl-2">;</span><br/><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-10">licenseKey:</span><span class="hl-2"> </span><span class="hl-12">&#39;your_license_key_here&#39;</span><span class="hl-2">, </span><br/><span class="hl-2">  </span><span class="hl-10">previewElement:</span><span class="hl-2"> </span><span class="hl-10">document</span><span class="hl-2">.</span><span class="hl-11">querySelector</span><span class="hl-2">(</span><span class="hl-12">&#39;#deepar-canvas&#39;</span><span class="hl-2">),</span><br/><span class="hl-2">  </span><span class="hl-10">effect:</span><span class="hl-2"> </span><span class="hl-12">&#39;https://cdn.jsdelivr.net/npm/deepar/effects/aviators&#39;</span><span class="hl-2"> </span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<a id="md:switch-effects" class="tsd-anchor"></a><h2><a href="#md:switch-effects">Switch effects</a></h2><p>AR filters are represented by effect files in DeepAR. You can load them to preview the effect.</p>
+<p>Places you can get DeepAR effects:</p>
+<ul>
+<li>Download a free filter pack: <a href="https://docs.deepar.ai/deepar-sdk/filters#free-effects-pack-content">https://docs.deepar.ai/deepar-sdk/filters#free-effects-pack-content</a>.</li>
+<li>Visit DeepAR asset store: <a href="https://www.store.deepar.ai/">https://www.store.deepar.ai/</a></li>
+<li>Create your own filters with <a href="https://www.deepar.ai/creator-studio">DeepAR Studio</a>.</li>
+</ul>
+<p>Load an effect using the <a href="classes/DeepAR.html#switchEffect" class="tsd-kind-method">switchEffect</a> method:</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">switchEffect</span><span class="hl-2">(</span><span class="hl-12">&#39;path/to/effect/alien&#39;</span><span class="hl-2">);</span>
+</code><button>Copy</button></pre>
+<a id="md:take-screenshot-or-video" class="tsd-anchor"></a><h2><a href="#md:take-screenshot-or-video">Take screenshot or video</a></h2><p>Take a screenshot.</p>
+<pre><code class="language-javascript"><span class="hl-3">// The image is a data url.</span><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">image</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">takeScreenshot</span><span class="hl-2">();</span>
+</code><button>Copy</button></pre>
+<p>Record a video.</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">startVideoRecording</span><span class="hl-2">();</span><br/><span class="hl-3">// Video is now recording...</span><br/><span class="hl-3">// When user is ready to stop recording.</span><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">video</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">finishVideoRecording</span><span class="hl-2">();</span>
+</code><button>Copy</button></pre>
+<a id="md:background-blur" class="tsd-anchor"></a><h2><a href="#md:background-blur">Background blur</a></h2><p>Enable background blur with strength 5.</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">backgroundBlur</span><span class="hl-2">(</span><span class="hl-7">true</span><span class="hl-2">, </span><span class="hl-13">5</span><span class="hl-2">)</span>
+</code><button>Copy</button></pre>
+<a id="md:background-replacement" class="tsd-anchor"></a><h2><a href="#md:background-replacement">Background replacement</a></h2><p>This is also known as background removal or green screen effect.</p>
+<p>Enable background replacement with an image of a sunny beach.</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">backgroundReplacement</span><span class="hl-2">(</span><span class="hl-7">true</span><span class="hl-2">, </span><span class="hl-12">&#39;images/sunny_beach.png&#39;</span><span class="hl-2">)</span>
+</code><button>Copy</button></pre>
+<a id="md:callbacks" class="tsd-anchor"></a><h2><a href="#md:callbacks">Callbacks</a></h2><p>DeepAR has some callbacks you can implement for additional informations. For example,
+to check if face is detected in the scene.</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">switchEffect</span><span class="hl-2">(</span><span class="hl-12">&#39;path/to/face-filter&#39;</span><span class="hl-2">);</span><br/><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-10">callbacks</span><span class="hl-2">.</span><span class="hl-11">onFaceTracked</span><span class="hl-2"> = </span><span class="hl-7">function</span><span class="hl-2">(</span><span class="hl-10">faceDataArr</span><span class="hl-2">) {</span><br/><span class="hl-2">    </span><span class="hl-9">if</span><span class="hl-2"> (</span><span class="hl-10">faceDataArr</span><span class="hl-2">[</span><span class="hl-13">0</span><span class="hl-2">].</span><span class="hl-10">detected</span><span class="hl-2">) {</span><br/><span class="hl-2">        </span><span class="hl-10">console</span><span class="hl-2">.</span><span class="hl-11">log</span><span class="hl-2">(</span><span class="hl-12">&quot;Face is detected!&quot;</span><span class="hl-2">);</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">};</span>
+</code><button>Copy</button></pre>
+<p>See all available callbacks here <a href="interfaces/DeepARCallbacks.html" class="tsd-kind-interface">DeepARCallbacks</a>.</p>
+<p>To remove callback if you don&#39;t need it anymore.</p>
+<pre><code class="language-javascript"><span class="hl-7">delete</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-10">callbacks</span><span class="hl-2">.</span><span class="hl-10">onFaceTracked</span><span class="hl-2">;</span>
+</code><button>Copy</button></pre>
+<a id="md:different-video-sources" class="tsd-anchor"></a><h2><a href="#md:different-video-sources">Different video sources</a></h2><p>DeepAR will by default use the user facing camera. It will also ask the
+camera permission from the user.</p>
+<p>Use the back camera on the phones:</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-3">// ...</span><br/><span class="hl-2">  </span><span class="hl-10">additionalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">      </span><span class="hl-10">cameraConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">          </span><span class="hl-10">facingMode:</span><span class="hl-2"> </span><span class="hl-12">&#39;environment&#39;</span><br/><span class="hl-2">      }</span><br/><span class="hl-2">  }</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<p>Set up your own camera or custom video source:</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-3">// ...</span><br/><span class="hl-2">  </span><span class="hl-10">additionalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">      </span><span class="hl-10">cameraConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">          </span><span class="hl-10">disableDefaultCamera:</span><span class="hl-2"> </span><span class="hl-7">true</span><br/><span class="hl-2">      }</span><br/><span class="hl-2">  }</span><br/><span class="hl-2">});</span><br/><br/><span class="hl-3">// HTMLVideoElement that can contain camera or any video.</span><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">video</span><span class="hl-2"> = ...;</span><br/><br/><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">setVideoElement</span><span class="hl-2">(</span><span class="hl-10">video</span><span class="hl-2">, </span><span class="hl-7">true</span><span class="hl-2">);</span>
+</code><button>Copy</button></pre>
+<p>Initialize DeepAR but start the camera later.
+This is used when you do not want to ask the camera permission right away.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-3">// ...</span><br/><span class="hl-2">    </span><span class="hl-10">additionalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">        </span><span class="hl-10">cameraConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">            </span><span class="hl-10">disableDefaultCamera:</span><span class="hl-2"> </span><span class="hl-7">true</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">});</span><br/><br/><span class="hl-3">// When you want to ask the camera permission and start the camera.</span><br/><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">startCamera</span><span class="hl-2">();</span>
+</code><button>Copy</button></pre>
+<p>In cases when the camera aspect ratio does not match the screen aspec ratio it is possible to rotate the camera input to achieve better camera quality.
+This is usually the case for in-store AR screens which have portrait screens, but use standard landscape webcams.
+To improve camera quality in those cases, rotate the camera physically 90° and call the next API.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-3">// ...</span><br/><span class="hl-2">    </span><span class="hl-10">additionalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">        </span><span class="hl-10">cameraConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">            </span><span class="hl-10">rotation:</span><span class="hl-2"> </span><span class="hl-13">90</span><span class="hl-2"> </span><span class="hl-3">// or 270</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<p>If you are not using the default DeepAR camera, but want to provide your own video source and still want to apply the rotation.</p>
+<pre><code class="language-javascript"><span class="hl-10">deepAR</span><span class="hl-2">.</span><span class="hl-11">setVideoRotation</span><span class="hl-2">(</span><span class="hl-13">90</span><span class="hl-2">) </span><span class="hl-3">// or 270</span>
+</code><button>Copy</button></pre>
+<a id="md:long-distance-face-tracking-better-accuracy" class="tsd-anchor"></a><h2><a href="#md:long-distance-face-tracking-better-accuracy">Long distance face tracking (better accuracy)</a></h2><p>In some cases, it is needed to have face tracking at longer distances, not just at hand-held distances.
+For that use-case, DeepAR comes with upgraded face tracking model which works better at distances and is more accurate in general.
+It can also be used if more accurate beauty effects are needed.</p>
+<blockquote>
+<p>⚠️ This face tracking model works only for single person face tracking, ie. it cannot track multiple faces.</p>
+</blockquote>
+<p>To enable this face tracking mode, pass <code>enableFaceTrackingCnn</code> hint at initialization.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-3">// ...</span><br/><span class="hl-2">    </span><span class="hl-10">additionalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">        </span><span class="hl-10">hint:</span><span class="hl-2"> </span><span class="hl-12">&quot;enableFaceTrackingCnn&quot;</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<a id="md:providing-your-own-canvas-for-rendering" class="tsd-anchor"></a><h2><a href="#md:providing-your-own-canvas-for-rendering">Providing your own canvas for rendering</a></h2><p>Create canvas directly in the HTML:</p>
+<pre><code class="language-html"><span class="hl-0">&lt;</span><span class="hl-1">canvas</span><span class="hl-2"> </span><span class="hl-4">width</span><span class="hl-2">=</span><span class="hl-5">&#39;1280&#39;</span><span class="hl-2"> </span><span class="hl-4">height</span><span class="hl-2">=</span><span class="hl-5">&#39;720&#39;</span><span class="hl-0">&gt;&lt;/</span><span class="hl-1">canvas</span><span class="hl-0">&gt;</span>
+</code><button>Copy</button></pre>
+<p>Or you can create it in Javascript.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">canvas</span><span class="hl-2"> = </span><span class="hl-10">document</span><span class="hl-2">.</span><span class="hl-11">createElement</span><span class="hl-2">(</span><span class="hl-12">&#39;canvas&#39;</span><span class="hl-2">);</span><br/><span class="hl-3">// Set canvas size, accounting screen resolution (to make it look 🤌 even on high definition displays)</span><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">canvasSize</span><span class="hl-2"> = { </span><span class="hl-10">width:</span><span class="hl-2"> </span><span class="hl-13">640</span><span class="hl-2">, </span><span class="hl-10">height:</span><span class="hl-2"> </span><span class="hl-13">360</span><span class="hl-2"> };</span><br/><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">dpr</span><span class="hl-2"> = </span><span class="hl-10">window</span><span class="hl-2">.</span><span class="hl-10">devicePixelRatio</span><span class="hl-2"> || </span><span class="hl-13">1</span><span class="hl-2">;</span><br/><span class="hl-10">canvas</span><span class="hl-2">.</span><span class="hl-10">style</span><span class="hl-2">.</span><span class="hl-10">maxWidth</span><span class="hl-2"> = </span><span class="hl-12">`</span><span class="hl-7">${</span><span class="hl-10">canvasSize</span><span class="hl-6">.</span><span class="hl-10">width</span><span class="hl-7">}</span><span class="hl-12">px`</span><span class="hl-2">;</span><br/><span class="hl-10">canvas</span><span class="hl-2">.</span><span class="hl-10">style</span><span class="hl-2">.</span><span class="hl-10">maxHeight</span><span class="hl-2"> = </span><span class="hl-12">`</span><span class="hl-7">${</span><span class="hl-10">canvasSize</span><span class="hl-6">.</span><span class="hl-10">height</span><span class="hl-7">}</span><span class="hl-12">px`</span><span class="hl-2">;</span><br/><span class="hl-10">canvas</span><span class="hl-2">.</span><span class="hl-10">width</span><span class="hl-2"> = </span><span class="hl-10">Math</span><span class="hl-2">.</span><span class="hl-11">floor</span><span class="hl-2">(</span><span class="hl-10">canvasSize</span><span class="hl-2">.</span><span class="hl-10">width</span><span class="hl-2"> * </span><span class="hl-10">dpr</span><span class="hl-2">);</span><br/><span class="hl-10">canvas</span><span class="hl-2">.</span><span class="hl-10">height</span><span class="hl-2"> = </span><span class="hl-10">Math</span><span class="hl-2">.</span><span class="hl-11">floor</span><span class="hl-2">(</span><span class="hl-10">canvasSize</span><span class="hl-2">.</span><span class="hl-10">height</span><span class="hl-2"> * </span><span class="hl-10">dpr</span><span class="hl-2">);</span>
+</code><button>Copy</button></pre>
+<blockquote>
+<p>⚠️ <strong>Note:</strong> Be sure to set <code>width</code> and <code>height</code> properties of the <code>canvas</code>!</p>
+</blockquote>
+<p>You can always change the canvas dimensions and they don&#39;t have to match the
+input video resolution. DeepAR will fit the input camera/video stream correctly
+to any canvas size.</p>
+<p>You pass the canvas when initializing DeepAR.</p>
+<pre><code class="language-javascript"><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-10">canvas:</span><span class="hl-2"> </span><span class="hl-10">canvas</span><span class="hl-2">, </span><br/><span class="hl-2">  </span><span class="hl-3">// ...</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<a id="md:download-speed-optimizations-for-deepar-web" class="tsd-anchor"></a><h2><a href="#md:download-speed-optimizations-for-deepar-web">Download speed optimizations for DeepAR Web</a></h2><p>Apart from the main <em>deepar.js</em> file and AR effect files, DeepAR uses additional files like:</p>
+<ul>
+<li>WebAssembly (WASM) files.</li>
+<li>ML model files.</li>
+</ul>
+<p>Some of them are required and will be downloaded every time. The others will be lazy
+downloaded when/if needed.</p>
+<blockquote>
+<p>⚠️ DeepAR will by default automatically fetch all additional resources from the <a href="https://www.jsdelivr.com/">JsDelivr</a> CDN.</p>
+</blockquote>
+<p>Fetching files from JsDelivr is not recommended if you care about download
+speeds of DeepAR Web resources. This is because the files on JsDelivr are not compressed.</p>
+<a id="md:compression" class="tsd-anchor"></a><h3><a href="#md:compression">Compression</a></h3><p>To optimize download speeds, all the DeepAR files should be compressed.
+It is recommended to serve DeepAR files from your own server or some CDN which supports file compression.</p>
+<blockquote>
+<p>If it is supported, you should use <a href="https://developer.mozilla.org/en-US/docs/Glossary/GZip_compression">GZip</a> or
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/Brotli_compression">Brotli</a> compression on all DeepAR files which will significantly reduce the
+SDK size. Check out your server/CDN options for compressing files.</p>
+</blockquote>
+<a id="md:custom-deployment-of-deepar-web" class="tsd-anchor"></a><h3><a href="#md:custom-deployment-of-deepar-web">Custom deployment of DeepAR Web</a></h3><p>DeepAR Web can be downloaded from <a href="https://developer.deepar.ai/downloads">DeepAR Developer Portal</a>.
+But since most users will install DeepAR through NPM, follow the next instructions.</p>
+<p>It is recommended to copy <code>./node_modules/deepar</code> directory which contains all the DeepAR
+files into your distribution (dist) folder.
+You can use <code>rootPath</code> to set a path to the custom root of the DeepAR SDK. All additional files
+that need to be fetched by DeepAR will be resolved against the given <code>rootPath</code>.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-3">// ...</span><br/><span class="hl-2">  </span><span class="hl-10">rootPath:</span><span class="hl-2"> </span><span class="hl-12">&#39;path/to/root/deepar/directory&#39;</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+<blockquote>
+<p>It is recommended to setup the copying of the DeepAR directory as part of you bundler build scripts,
+in case you ever need to updated to a newer version of DeepAR.</p>
+</blockquote>
+<a id="md:specifying-paths-for-each-file" class="tsd-anchor"></a><h4><a href="#md:specifying-paths-for-each-file">Specifying paths for each file</a></h4><p>Another option, instead of using the DeepAR directory and copying it as-is, is to specify
+a path to each file. The advantage of this is that you can use the bundler to keep track of your files.</p>
+<p>For example, if using <a href="https://webpack.js.org/">Webpack</a>, you can use it&#39;s
+<a href="https://webpack.js.org/guides/asset-modules/">asset modules</a> to import all the files needed.</p>
+<p>Pass the file paths in <code>additionalOptions</code>.</p>
+<pre><code class="language-javascript"><span class="hl-7">const</span><span class="hl-2"> </span><span class="hl-8">deepAR</span><span class="hl-2"> = </span><span class="hl-9">await</span><span class="hl-2"> </span><span class="hl-10">deepar</span><span class="hl-2">.</span><span class="hl-11">initialize</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-3">// ...</span><br/><span class="hl-2">    </span><span class="hl-10">additinalOptions:</span><span class="hl-2"> {</span><br/><span class="hl-2">        </span><span class="hl-10">faceTrackingConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">            </span><span class="hl-10">modelPath:</span><span class="hl-2"> </span><span class="hl-12">&#39;path/to/deepar/models/face/models-68-extreme.bin&#39;</span><br/><span class="hl-2">        },</span><br/><span class="hl-2">        </span><span class="hl-10">segmentationConfig:</span><span class="hl-2"> {</span><br/><span class="hl-2">            </span><span class="hl-10">modelPath:</span><span class="hl-2"> </span><span class="hl-12">&#39;path/to/deepar/models/segmentation/segmentation-160x160-opt.bin&#39;</span><br/><span class="hl-2">        },</span><br/><span class="hl-2">        </span><span class="hl-10">deeparWasmPath:</span><span class="hl-2"> </span><span class="hl-12">&#39;path/to/deepar/wasm/deepar.wasm&#39;</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">});</span>
+</code><button>Copy</button></pre>
+</div></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)" id="icon-chevronDown"></path></svg>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li>
+<ul>
+<li><a href="#md:documentation"><span>Documentation</span></a></li>
+<li>
+<ul>
+<li><a href="#md:license-key"><span>License key</span></a></li>
+<li><a href="#md:getting-started"><span>Getting started</span></a></li>
+<li>
+<ul>
+<li><a href="#md:via-script-tag"><span>via <wbr/>Script tag</span></a></li>
+<li><a href="#md:via-npm"><span>via NPM</span></a></li></ul></li>
+<li><a href="#md:switch-effects"><span>Switch effects</span></a></li>
+<li><a href="#md:take-screenshot-or-video"><span>Take screenshot or video</span></a></li>
+<li><a href="#md:background-blur"><span>Background blur</span></a></li>
+<li><a href="#md:background-replacement"><span>Background replacement</span></a></li>
+<li><a href="#md:callbacks"><span>Callbacks</span></a></li>
+<li><a href="#md:different-video-sources"><span>Different video sources</span></a></li>
+<li><a href="#md:long-distance-face-tracking-better-accuracy"><span>Long distance face tracking (better accuracy)</span></a></li>
+<li><a href="#md:providing-your-own-canvas-for-rendering"><span>Providing your own canvas for rendering</span></a></li>
+<li><a href="#md:download-speed-optimizations-for-deepar-web"><span>Download speed optimizations for <wbr/>DeepAR <wbr/>Web</span></a></li>
+<li>
+<ul>
+<li><a href="#md:compression"><span>Compression</span></a></li>
+<li><a href="#md:custom-deployment-of-deepar-web"><span>Custom deployment of <wbr/>DeepAR <wbr/>Web</span></a></li>
+<li>
+<ul>
+<li><a href="#md:specifying-paths-for-each-file"><span>Specifying paths for each file</span></a></li></ul></li></ul></li></ul></li></ul></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>DeepAR <wbr/>Web API -<wbr/> v5.6.19</span></a>
+<ul class="tsd-small-nested-navigation">
+<li><a href="modules/errors.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>errors</span></a></li>
+<li><a href="variables/version.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-32"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-variable)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.106 16L8.85 7.24H9.966L11.454 13.192C11.558 13.608 11.646 13.996 11.718 14.356C11.79 14.708 11.842 14.976 11.874 15.16C11.906 14.976 11.954 14.708 12.018 14.356C12.09 13.996 12.178 13.608 12.282 13.192L13.758 7.24H14.85L12.582 16H11.106Z" fill="var(--color-text)"></path></g></svg><span>version</span></a></li>
+<li><a href="functions/initialize.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>initialize</span></a></li>
+<li><a href="types/ToneMapping.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Tone<wbr/>Mapping</span></a></li>
+<li><a href="classes/DeepAR.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-128"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)"></path></g></svg><span>DeepAR</span></a></li>
+<li><a href="interfaces/DeepARParams.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-256"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)"></path></g></svg><span>DeepARParams</span></a></li>
+<li><a href="interfaces/DeepARCallbacks.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>DeepARCallbacks</span></a></li>
+<li><a href="interfaces/FaceData.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Face<wbr/>Data</span></a></li>
+<li><a href="enums/VarType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-8"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-enum)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.45 16V7.24H14.49V8.224H10.518V10.936H14.07V11.908H10.518V15.016H14.49V16H9.45Z" fill="var(--color-text)"></path></g></svg><span>Var<wbr/>Type</span></a></li>
+<li><a href="classes/ScriptingAPI.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-128"></use></svg><span>ScriptingAPI</span></a></li>
+<li><a href="enums/ARTouchType.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-8"></use></svg><span>ARTouch<wbr/>Type</span></a></li>
+<li><a href="interfaces/ARTouchInfo.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>ARTouch<wbr/>Info</span></a></li></ul></nav></div></div></div>
+<div class="tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div></body></html>

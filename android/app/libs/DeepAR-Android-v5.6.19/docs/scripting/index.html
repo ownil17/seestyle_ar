@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DeepAR Scripting API: Home</title>
+    <link rel="shortcut icon" href="deepar.ico" type="image/x-icon"/>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    <img style="transform: translate(0%, 30%);" src="deepar.png" width="32" height="32">
+    <span style="font-size: 16px;">DeepAR Scripting API <i>v5.6.19</i></span>
+
+    <h1 class="page-title">DeepAR Scripting API Documentation</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h2>Table of Contents</h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#quickstart">Quickstart</a>
+<ul>
+<li><a href="#using-new-deepar-studio">Using new DeepAR Studio</a></li>
+<li><a href="#using-legacy-deepar-studio">Using legacy DeepAR Studio</a></li>
+</ul>
+</li>
+<li><a href="#callbacks">Callbacks</a>
+<ul>
+<li><a href="#onstart">onStart()</a></li>
+<li><a href="#onpreupdate">onPreUpdate()</a></li>
+<li><a href="#onupdate">onUpdate()</a></li>
+<li><a href="#onflush">onFlush()</a></li>
+<li><a href="#oncollisionenter-firstnode-secondnode">onCollisionEnter(firstNode, secondNode)</a></li>
+<li><a href="#oncollisioninside-firstnode-secondnode">onCollisionInside(firstNode, secondNode)</a></li>
+<li><a href="#oncollisionleave-firstnode-secondnode">onCollisionLeave(firstNode, secondNode)</a></li>
+<li><a href="#ontouchoccurred-touch-type">onTouchOccurred(touch, type)</a></li>
+<li><a href="#ontriggerstatechanged-triggertype-state-faceid">onTriggerStateChanged(triggerType, state, faceId)</a></li>
+<li><a href="#oncustomtriggerfired-triggername">onCustomTriggerFired(triggerName)</a></li>
+</ul>
+</li>
+</ul>
+<h2 id=introduction>Introduction</h2>
+<p>DeepAR engine supports custom JavaScript scripts and exposes a number of JavaScript callbacks, functions and methods that allow you to fully customize the effect to your needs.</p>
+<h2 id=quickstart>Quickstart</h2>
+<h3 id=using-new-deepar-studio>Using new DeepAR Studio</h3>
+<p>First, create a JavaScript file <code>HelloWorld.js</code> containing the following code.</p>
+<pre class="prettyprint source lang-javascript"><code>function onStart() {
+    Debug.log('Hello world!');
+}
+</code></pre>
+<p>Then open DeepAR Studio and create a new project. On the <code>Root</code> node, attach the <code>Script</code> component.</p>
+<img src="add_script_new.png" alt="Adding the script component" style="width:1000px;"/>
+<p>Drag and drop the <code>HelloWorld.js</code> file into the DeepAR Studio and click <code>Import</code> in the <code>Import Resource</code> window which had just appeared.</p>
+<img src="import_script_new.png" alt="Importing the script file" style="width:1000px;"/>
+<p>Now in the <code>Properties</code> tabbed window, find the <code>Script</code> slot of the <code>Script</code> component and drag and drop the imported <code>HelloWorld.js</code> script resource (from the <code>Resources</code> tabbed window) into it.</p>
+<img src="set_script_new.png" alt="Setting the script resource" style="width:1000px;"/>
+<p>Finally, you can preview the effect and see the <code>&quot;Hello world!&quot;</code> message appear in the <code>Scripting Console</code> window.</p>
+<img src="scripting_console_new.png" alt="Scripting Console window" style="width:400px;"/>
+<h3 id=using-legacy-deepar-studio>Using legacy DeepAR Studio</h3>
+<p>First, create a JavaScript file <code>HelloWorld.js</code> containing the following code.</p>
+<pre class="prettyprint source lang-javascript"><code>function onStart() {
+    Debug.log('Hello world!');
+}
+</code></pre>
+<p>Then open DeepAR Studio and create a new effect. On the <code>Root</code> node, attach the <code>Script</code> component.</p>
+<img src="add_script.png" alt="Adding the script component" style="width:500px;"/>
+<p>On the right side properties view, find the <code>Source Code</code> property of the <code>Script</code> component and click on the <code>&quot;Choose Script File...&quot;</code> button.</p>
+<img src="choose_script.png" alt="Choosing the script file" style="width:300px;"/>
+<p>Select the <code>HelloWorld.js</code> script file.</p>
+<img src="select_hello_world_script.png" alt="Selecting the 'HelloWorld.js' script file" style="width:500px;"/>
+<p>On the left side, in the tabs view you can see the <code>Console</code> tab view. It shows the number of new (unread) console logs. Click on it to see them.</p>
+<img src="left_side_tabs.png" alt="Tabs view" style="width:400px;"/>
+<p>The console output will show the info log message <code>&quot;Hello world!&quot;</code>.</p>
+<img src="console_tab_view.png" alt="Console view" style="width:300px;"/>
+<h2 id=callbacks>Callbacks</h2>
+<h3 id=onstart>onStart()</h3>
+<p>Called once when the script component is started.</p>
+<h3 id=onpreupdate>onPreUpdate()</h3>
+<p>Called before each frame update.</p>
+<h3 id=onupdate>onUpdate()</h3>
+<p>Called on each frame update.</p>
+<h3 id=onflush>onFlush()</h3>
+<p>Called after each frame update.</p>
+<h3 id=oncollisionenter-firstnode-secondnode>onCollisionEnter(firstNode, secondNode)</h3>
+<p>Called when two physics bodies start colliding. Both <code>firstNode</code> and <code>secondNode</code> are instances of <a href="Node.html">Node</a> class.</p>
+<h3 id=oncollisioninside-firstnode-secondnode>onCollisionInside(firstNode, secondNode)</h3>
+<p>Called when two physics bodies are colliding. Both <code>firstNode</code> and <code>secondNode</code> are instances of <a href="Node.html">Node</a> class.</p>
+<h3 id=oncollisionleave-firstnode-secondnode>onCollisionLeave(firstNode, secondNode)</h3>
+<p>Called when two physics bodies stop colliding. Both <code>firstNode</code> and <code>secondNode</code> are instances of <a href="Node.html">Node</a> class.</p>
+<h3 id=ontouchoccurred-touch-type>onTouchOccurred(touch, type)</h3>
+<p>Called when a touch event occurs. The <code>touch</code>  parameter is of <a href="Touch.html">Touch</a> class and the <code>type</code> parameter is of <a href="Touch.html#.TouchType">Touch.TouchType</a> enum.</p>
+<h3 id=ontriggerstatechanged-triggertype-state-faceid>onTriggerStateChanged(triggerType, state, faceId)</h3>
+<p>Called when a trigger state changes. The <code>triggerType</code> parameter is of <a href="Utility.html#.TriggerType">Utility.TriggerType</a> enum and represents the type of trigger that has changed. The <code>state</code> is a boolean which represents the new trigger state. The <code>faceId</code> is an integer that represents the face index on which the trigger state has changed (value ranges from 0 to 3).</p>
+<h3 id=oncustomtriggerfired-triggername>onCustomTriggerFired(triggerName)</h3>
+<p>Called when a custom trigger is fired. The <code>triggerName</code> is a string that represents the fired trigger name.</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Context.html">Context</a></li><li><a href="Debug.html">Debug</a></li><li><a href="Interop.html">Interop</a></li><li><a href="Time.html">Time</a></li><li><a href="Utility.html">Utility</a></li></ul><h3>Classes</h3><ul><li><a href="FacePositionComponent.html">FacePositionComponent</a></li><li><a href="Intersection.html">Intersection</a></li><li><a href="Node.html">Node</a></li><li><a href="RigidPose.html">RigidPose</a></li><li><a href="Touch.html">Touch</a></li><li><a href="Vec2.html">Vec2</a></li><li><a href="Vec3.html">Vec3</a></li><li><a href="Vec4.html">Vec4</a></li><li><a href="Vector2.html">Vector2</a></li><li><a href="Vector3.html">Vector3</a></li><li><a href="Vector4.html">Vector4</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Mar 18 2025 15:14:59 GMT+0100 (Central European Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+<script src="site.js" defer></script>
+</body>
+</html>
