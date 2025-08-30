@@ -25,4 +25,15 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.8.22" apply false
 }
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()        // Google's Maven repository
+        mavenCentral()  // Maven Central repository
+        maven {         // Add DeepAR Maven repository
+            url = uri("https://sdk.developer.deepar.ai/maven-android-repository/releases/")
+        }
+    }
+}
+
 include(":app")

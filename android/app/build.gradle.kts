@@ -42,6 +42,12 @@ android {
     }
 }
 
+dependencies {
+    implementation(files("libs/deepar-sdk.aar")) // Make sure deepar-sdk.aar is in the libs folder
+    implementation("ai.deepar.ar:DeepAR:5.6.4")
+    // Other dependencies can go here
+}
+
 flutter {
     source = "../.."
 }
