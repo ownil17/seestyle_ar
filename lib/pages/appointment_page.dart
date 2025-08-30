@@ -13,7 +13,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:seestyle_firebase/utils/guest_manager.dart';
 
 class AppointmentPage extends StatefulWidget {
-  const AppointmentPage({Key? key}) : super(key: key);
+  const AppointmentPage({super.key});
 
   @override
   _AppointmentPageState createState() => _AppointmentPageState();
@@ -197,21 +197,21 @@ Future<void> signOut() async {
                   });
                 },
                 style: ButtonStyle(
-                  padding: MaterialStateProperty.all(EdgeInsets.zero),
-                  backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
-                    return states.contains(MaterialState.selected)
+                  padding: WidgetStateProperty.all(EdgeInsets.zero),
+                  backgroundColor: WidgetStateProperty.resolveWith<Color>((states) {
+                    return states.contains(WidgetState.selected)
                         ? Colors.white
                         : const Color.fromARGB(255, 40, 44, 52);
                   }),
-                  foregroundColor: MaterialStateProperty.resolveWith<Color>((states) {
-                    return states.contains(MaterialState.selected)
+                  foregroundColor: WidgetStateProperty.resolveWith<Color>((states) {
+                    return states.contains(WidgetState.selected)
                         ? Colors.black
                         : Colors.white;
                   }),
-                  side: MaterialStateProperty.all(
+                  side: WidgetStateProperty.all(
                     const BorderSide(color: Colors.grey),
                   ),
-                  textStyle: MaterialStateProperty.all(
+                  textStyle: WidgetStateProperty.all(
                     const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
                   ),
                 ),

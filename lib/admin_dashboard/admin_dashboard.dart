@@ -9,7 +9,7 @@ import 'package:seestyle_firebase/admin_dashboard/dashboard_components/dash_draw
 import 'package:seestyle_firebase/auth/auth.dart';
 
 class AdminDashboard extends StatelessWidget {
-  const AdminDashboard({Key? key}) : super(key: key);
+  const AdminDashboard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class AdminDashboard extends StatelessWidget {
 class AdminDashboardPage extends StatefulWidget {
   final int selectedIndex;
 
-  const AdminDashboardPage({Key? key, required this.selectedIndex}) : super(key: key);
+  const AdminDashboardPage({super.key, required this.selectedIndex});
 
   @override
   State<AdminDashboardPage> createState() => _AdminDashboardPageState();

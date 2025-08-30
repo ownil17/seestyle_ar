@@ -9,14 +9,14 @@ class GlassesInfoCard extends StatelessWidget {
   final Map<String, dynamic>? prescription;
 
   const GlassesInfoCard({
-    Key? key,
+    super.key,
     required this.customerName,
     required this.prescriptionDate,
     required this.frameModel,
     required this.lensType,
     required this.estimatedReadyDate,
     this.prescription,
-  }) : super(key: key);
+  });
 
   Widget _buildPrescriptionColumn(String eye, Map<String, dynamic>? eyeData) {
     return Expanded(

@@ -12,7 +12,7 @@ import 'package:seestyle_firebase/pages/profile_page.dart';
 class SearchResultsPage extends StatefulWidget {
   final String searchQuery;
 
-  const SearchResultsPage({Key? key, required this.searchQuery}) : super(key: key);
+  const SearchResultsPage({super.key, required this.searchQuery});
 
   @override
   State<SearchResultsPage> createState() => _SearchResultsPageState();
@@ -51,7 +51,7 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
     final snapshot = await FirebaseFirestore.instance
         .collection('products')
         .where('name_lowercase', isGreaterThanOrEqualTo: lowerQuery)
-        .where('name_lowercase', isLessThan: lowerQuery + 'z')
+        .where('name_lowercase', isLessThan: '${lowerQuery}z')
         .get();
 
     final user = FirebaseAuth.instance.currentUser;

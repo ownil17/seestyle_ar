@@ -13,14 +13,14 @@ import 'package:seestyle_firebase/pages/favorites_page.dart';
 import 'package:seestyle_firebase/utils/guest_manager.dart';
 
 class OrderStatusPage extends StatefulWidget {
-  const OrderStatusPage({Key? key}) : super(key: key);
+  const OrderStatusPage({super.key});
 
   @override
   State<OrderStatusPage> createState() => _OrderStatusPageState();
 }
 
 class _OrderStatusPageState extends State<OrderStatusPage> {
-  int _selectedIndex = 2;
+  final int _selectedIndex = 2;
 
   void _onItemTapped(int index) {
     if (_selectedIndex == index) return;

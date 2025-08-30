@@ -9,14 +9,14 @@ import 'package:seestyle_firebase/admin_dashboard/dashboard_components/dash_draw
 import 'package:seestyle_firebase/auth/auth.dart';
 
 class ManageAppointmentsPage extends StatefulWidget {
-  const ManageAppointmentsPage({Key? key}) : super(key: key);
+  const ManageAppointmentsPage({super.key});
 
   @override
   State<ManageAppointmentsPage> createState() => _ManageAppointmentsPageState();
 }
 
 class _ManageAppointmentsPageState extends State<ManageAppointmentsPage> {
-  int _selectedIndex = 2;
+  final int _selectedIndex = 2;
 
   final List<String> statusOptions = ['approved', 'cancelled'];
   final List<String> stateOptions = ['upcoming', 'completed'];

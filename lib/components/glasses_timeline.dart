@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class GlassesTimeline extends StatelessWidget {
   final int currentStep;
 
-  GlassesTimeline({required this.currentStep});
+  GlassesTimeline({super.key, required this.currentStep});
 
   final List<String> labels = [
     "Prescription Issued",

@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class ScheduleAppointmentPage extends StatefulWidget {
-  const ScheduleAppointmentPage({Key? key}) : super(key: key);
+  const ScheduleAppointmentPage({super.key});
 
   @override
   State<ScheduleAppointmentPage> createState() => _ScheduleAppointmentPageState();

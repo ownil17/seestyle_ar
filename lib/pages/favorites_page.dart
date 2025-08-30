@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:seestyle_firebase/pages/item_details_page.dart';
 
 class FavoritesPage extends StatefulWidget {
-  const FavoritesPage({Key? key}) : super(key: key);
+  const FavoritesPage({super.key});
 
   @override
   State<FavoritesPage> createState() => _FavoritesPageState();

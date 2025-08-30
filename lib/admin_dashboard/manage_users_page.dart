@@ -9,7 +9,7 @@ import 'package:seestyle_firebase/admin_dashboard/manage_products_page.dart';
 import 'package:seestyle_firebase/auth/auth.dart';
 
 class ManageUsersPage extends StatefulWidget {
-  const ManageUsersPage({Key? key}) : super(key: key);
+  const ManageUsersPage({super.key});
 
   @override
   State<ManageUsersPage> createState() => _ManageUsersPageState();
@@ -78,7 +78,7 @@ class _ManageUsersPageState extends State<ManageUsersPage> {
 
     final List<String> roles = ['user', 'admin', 'staff']; // Adjust roles here
 
-    final _formKey = GlobalKey<FormState>();
+    final formKey = GlobalKey<FormState>();
 
     final result = await showDialog<bool>(
       context: context,
@@ -87,7 +87,7 @@ class _ManageUsersPageState extends State<ManageUsersPage> {
         title: const Text('Edit Basic Info'),
         content: SingleChildScrollView(
           child: Form(
-            key: _formKey,
+            key: formKey,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -103,7 +103,7 @@ class _ManageUsersPageState extends State<ManageUsersPage> {
 
                 // Role dropdown
                 DropdownButtonFormField<String>(
-                  value: selectedRole,
+                  initialValue: selectedRole,
                   decoration: const InputDecoration(labelText: 'Role'),
                   items: roles
                       .map((role) => DropdownMenuItem(
@@ -155,7 +155,7 @@ class _ManageUsersPageState extends State<ManageUsersPage> {
           ),
           ElevatedButton(
             onPressed: () async {
-              if (_formKey.currentState?.validate() ?? false) {
+              if (formKey.currentState?.validate() ?? false) {
                 // Update user doc
                 await userDoc.reference.update({
                   'username': usernameController.text.trim(),

@@ -9,7 +9,7 @@ import 'package:seestyle_firebase/admin_dashboard/manage_users_page.dart';
 import 'package:seestyle_firebase/auth/auth.dart';
 
 class ManageOrdersPage extends StatefulWidget {
-  const ManageOrdersPage({Key? key}) : super(key: key);
+  const ManageOrdersPage({super.key});
 
   @override
   State<ManageOrdersPage> createState() => _ManageOrdersPageState();
@@ -17,7 +17,7 @@ class ManageOrdersPage extends StatefulWidget {
 
 class _ManageOrdersPageState extends State<ManageOrdersPage> {
   final ordersRef = FirebaseFirestore.instance.collection('orders');
-  int _selectedIndex = 3;
+  final int _selectedIndex = 3;
 
   void _onItemTapped(int index) {
     if (_selectedIndex == index) return;
@@ -104,7 +104,7 @@ class _ManageOrdersPageState extends State<ManageOrdersPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   DropdownButtonFormField<String>(
-                    value: selectedUserId,
+                    initialValue: selectedUserId,
                     items: usersSnapshot.docs.map((userDoc) {
                       final username = userDoc.data().containsKey('username')
                           ? userDoc['username']

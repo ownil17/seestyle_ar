@@ -13,13 +13,13 @@ class ItemDetailsPage extends StatefulWidget {
   final String productId;
 
   const ItemDetailsPage({
-    Key? key,
+    super.key,
     required this.itemName,
     required this.itemPrice,
     required this.description,
     required this.productId,
     this.imageUrl,
-  }) : super(key: key);
+  });
 
   @override
   _ItemDetailsPageState createState() => _ItemDetailsPageState();

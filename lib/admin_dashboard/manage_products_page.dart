@@ -11,14 +11,14 @@ import 'package:seestyle_firebase/auth/auth.dart';
 // ✅ Add this line
 
 class ManageProductsPage extends StatefulWidget {
-  const ManageProductsPage({Key? key}) : super(key: key);
+  const ManageProductsPage({super.key});
 
   @override
   State<ManageProductsPage> createState() => _ManageProductsPageState();
 }
 
 class _ManageProductsPageState extends State<ManageProductsPage> {
-  int _selectedIndex = 1;
+  final int _selectedIndex = 1;
 
   void _onItemTapped(int index) {
     if (index == _selectedIndex) return;
